@@ -17,8 +17,8 @@
   width: 100%;
 }
 
-.card-img-container img {
-  width: 100px;
+.card-content img {
+  width:100%;
 }
 
 .usr-img {

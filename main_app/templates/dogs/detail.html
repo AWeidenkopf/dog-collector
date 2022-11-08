@@ -25,7 +25,7 @@
 
 <section class="dog-container">
     <img 
-      src="{% static 'images/shiba.png' %}" 
+      src="{% static 'images/dog-detail-page.svg' %}" 
       alt="A sweet dog"
       class="dog-img"
     >
@@ -34,7 +34,7 @@
     {% if dog.age > 0 %}
       <h2>A {{ dog.age }} year old {{ dog.breed }}</h2>
     {% else %}
-      <h2>A {{ dog.breed }} kitten.</h2>
+      <h2>A {{ dog.breed }} puppy.</h2>
     {% endif %}
     <p>{{ dog.description }}</p>
     <div class="dog-actions">
@@ -48,7 +48,7 @@
     <div class="subsection-title">
       <h2>Feedings</h2>
       <img 
-        src="{% static 'images/dog-eating-tacos.svg' %}" 
+        src="{% static 'images/dog-eating-1.svg' %}" 
         alt="A dog eating tacos"
       />
       <img 

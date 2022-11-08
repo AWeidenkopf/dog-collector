@@ -1,5 +1,6 @@
 body {
   height: 100vh;
+  background-color: var(--nav-bg-ff);
 }
 
 main {
@@ -7,12 +8,13 @@ main {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
+  width: 100%;
   height: 100%;
   background-color: red;
   background-image:
     radial-gradient(
-      yellow,
-      #f06d06
+      rgb(252, 252, 168),
+      rgb(245, 138, 56)
     );
 }
 
