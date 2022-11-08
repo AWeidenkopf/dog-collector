@@ -1,9 +1,19 @@
+body {
+  height: 100vh;
+}
+
 main {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   height: 100%;
+  background-color: red;
+  background-image:
+    radial-gradient(
+      yellow,
+      #f06d06
+    );
 }
 
 main > section {
@@ -13,6 +23,8 @@ main > section {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  margin: 0;
+  padding: 0;
 }
 
 .header-logo-container {
@@ -20,11 +32,15 @@ main > section {
 }
 
 .logo-container {
-  max-width: 375px;
+  width: 100%;
 }
 
-.cat-container {
+.dog-container {
   width: 80%;
+}
+
+.dog-container img{
+  width: 100%;
 }
 
 .login {
