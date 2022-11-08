@@ -49,15 +49,15 @@
       <h2>Feedings</h2>
       <img 
         src="{% static 'images/dog-eating-1.svg' %}" 
-        alt="A dog eating tacos"
+        alt="A big dog eating"
       />
       <img 
-        src="{% static 'images/dog-drinking-milk.svg' %}"
-        alt="A dog drinking milk"
+        src="{% static 'images/dog-eating-2.svg' %}"
+        alt="A small dog eating"
       />
       <img 
-        src="{% static 'images/dog-holding-bones.svg' %}" 
-        alt="A dog holding two bones"
+        src="{% static 'images/dog-eating-3.svg' %}" 
+        alt="A dog with its face in the bowl"
       />
     </div>
     <table>
@@ -72,7 +72,6 @@
       {% else %}
         <p class="unfed">{{dog.name}} might be hungry!</p>
       {% endif %}
-      {% comment %} New markup above {% endcomment %}
       {% csrf_token %}
       {{ feeding_form.as_p }}
       <button type="submit" class="btn submit">Add Feeding</button>
