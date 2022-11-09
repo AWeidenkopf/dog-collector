@@ -20,6 +20,7 @@
 .page-header img {
   width: 200px;
   height: auto;
+  margin-bottom: -65px;
 }
 
 table {
@@ -34,6 +35,7 @@ th {
   font-weight: normal;
   vertical-align: top;
   font-size: var(--font-reg);
+  width: 50px;
 }
 
 td {
