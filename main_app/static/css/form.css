@@ -53,6 +53,10 @@ td > textarea {
   font-family: inherit;
 }
 
+.helptext {
+  font-size: 12px;
+}
+
 .btn {
   align-self: flex-end;
   margin-right: 40px;
