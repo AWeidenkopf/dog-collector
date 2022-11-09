@@ -169,7 +169,19 @@ nav li {
 
 .page-content {
   font-size: var(--font-reg);
-  margin: 0 20%;
+  max-width: 500px;
+  margin: 0 10px;
+}
+
+.about-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  line-height: 30px;
+}
+
+.about-container img {
+  max-width: 500px;
 }
 
 @media only screen and (min-width: 768px) {

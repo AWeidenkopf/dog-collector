@@ -1,13 +1,15 @@
 {% extends 'base.html' %}
+{% load static %}
 
 {% block content %}
 
 <h1>About the Dog Collector</h1>
 <hr />
+<div class="about-container">
 <p class="page-content">
-  With Dog Collector, you are able to create your dogs and manage their feedings. Really helpfull tool to ensure your pets are not being over or underfed. 
-  Start by signing up and adding all of your beloved pooches with name, breed, a description and age!
-  Then just add the feeding to the app, when you're good to go!
+  With Dog Collector, you can create a profile to your dogs and manage their feedings. A helpful tool to ensure that your pets are not being over or underfed. Start by signing up and adding all of your beloved pooches with name, breed, description and age! Then, add the feeding to the application, when you're good to go!
 </p>
+<img src="{% static 'images/woman-and-dog.svg' %}" alt="A woman caring for a dog"/>
+</div>
 
 {% endblock %}
