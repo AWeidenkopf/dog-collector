@@ -132,7 +132,7 @@
 .subsection-content p,
 .subsection-content input,
 .subsection-content select{
-  font-size: 40px;
+  font-size: var(--font-l);
 }
 
 .subsection-content input,
