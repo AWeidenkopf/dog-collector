@@ -18,8 +18,10 @@
   <img src="{% static 'images/corgi.png' %}" alt="A corgi dog" />
   <img src="{% static 'images/dog (2).png' %}" alt="A cute dog" />
 </section>
+<hr/>
 
 <section class="card-container">
+  {% if dogs.count %}
   {% for dog in dogs %}
     <div class="card">
       <a href="{% url 'dogs_detail' dog.id %}">
@@ -41,6 +43,12 @@
     </a>
     </div>
   {% endfor %}
+  {% else %}
+  <div class="no-dogs">
+    You don't have any dogs yet.
+    <img src="{% static 'images/sad-dog.svg' %}" alt="A sad dog" />
+  </div>
+  {% endif %}
 </section>
 
 {% endblock %}
