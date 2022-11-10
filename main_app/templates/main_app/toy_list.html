@@ -1,5 +1,5 @@
 {% extends 'base.html' %} 
-{% load static %} 
+{% load static %}
 
 {% block head %}
 <link
@@ -7,6 +7,7 @@
   type="text/css"
   href="{% static 'css/toys/toy-index.css' %}"
 />
+<script defer src="{% static 'js/toy.js' %}"></script>
 {% endblock %}
 
 {% block content %}
@@ -25,6 +26,7 @@
     <div class="card-bg" style="background-color: {{ toy.color }}"></div>
     <a href="{% url 'toys_detail' toy.id %}">
       <div class="card-content">
+        <img src="{% static 'images/toys/2.svg' %}" alt="A dog toy" />
         <h2>{{ toy.name }}</h2>
         <p>A {{ toy.color }} toy</p>
       </div>

@@ -62,3 +62,7 @@
 .page-header > img:first-of-type {
   margin-left: 15px;
 }
+
+.card-content img {
+  max-width: 125px;
+}

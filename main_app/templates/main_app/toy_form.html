@@ -6,12 +6,13 @@
 {% endblock %}
 
 {% block content %}
-<div class="page-header">
+<div class="page-container">
   {% if object %}
     <h1>Edit {{object.name}}</h1>
   {% else %}
     <h1>Add a Toy</h1>
   {% endif %}
+<div class="page-header">
   <img src="{% static 'images/nerd-dog.svg' %}" alt="A dog using a computer"/>
 </div>
 <form action="" method="post" class="form-container" autocomplete="off">
@@ -21,5 +22,6 @@
   </table>
   <button type="submit" class="btn submit">Submit!</button>
 </form>
+</div>
 
 {% endblock %}
